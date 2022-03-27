@@ -5,11 +5,10 @@ import IndexWithColor from "../components/indexwithcolor";
 import Card from "../components/Card";
 
 export default function Home() {
-  const [socketUrl, setSocketUrl] = useState(process.env.NEXT_PUBLIC_WS_URL);
-  const [messageHistory, setMessageHistory] = useState([]);
+  const [socketUrl] = useState(process.env.NEXT_PUBLIC_WS_URL);
   const ListOfCity = useRef([]);
   const [ActiveCard, setActiveCard] = useState("");
-  const { sendMessage, lastMessage, readyState } = useWebSocket(socketUrl, {
+  const {lastMessage, readyState } = useWebSocket(socketUrl, {
     shouldReconnect: () => true,
     reconnectAttempts: 10,
     reconnectInterval: 3000,
@@ -40,11 +39,7 @@ export default function Home() {
     return mergedMap;
   }, [lastMessage]);
 
-  useEffect(() => {
-    if (lastMessage !== null) {
-      setMessageHistory((prev) => prev.concat(lastMessage));
-    }
-  }, [lastMessage, setMessageHistory]);
+
 
   const connectionStatus = {
     [ReadyState.CONNECTING]: "Connecting",
@@ -65,6 +60,13 @@ export default function Home() {
       return 0;
     });
 
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // for smoothly scrolling
+      });
+    };
+
   const MainBanner = {};
   MainBanner["width"] = "96%";
   MainBanner["order"] = "-1";
@@ -81,7 +83,7 @@ export default function Home() {
         <Card
           AQI={val[1]}
           CityName={val[0]}
-          onClick={() => setActiveCard(val[0])}
+          onClick={() => {setActiveCard(val[0]),scrollToTop()}}
         />
       </div>
     ));
