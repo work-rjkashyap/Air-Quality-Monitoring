@@ -14,8 +14,6 @@ function Card({CityName,AQI,onClick}) {
 
     const status = getLevelAqI(roundAQI(AQI));
 
-    console.log('status',status);
-
     GetCityDetail.current = useMemo(() => [...GetCityDetail.current, AQI], [AQI]);
 
 

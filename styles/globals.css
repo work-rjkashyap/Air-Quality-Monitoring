@@ -4,31 +4,31 @@
 
 
 
-.badge-good
+.level-good
 {
 background-color: #00E400;
 }
 
-.badge-satisfactory
+.level-satisfactory
 {
 background-color: #ffff00;
 }
 
-.badge-moderate
+.level-moderate
 {
 background-color: #ff7e00;
 }
 
-.badge-Poor
+.level-Poor
 {
 background-color: #ff0000;
 }
 
-.badge-very-poor
+.level-very-poor
 {
 background-color: #8f3f97;
 }
-.badge-severe
+.level-severe
 {
 background-color: #7e0023;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import aql_level from "../constents/aqllevel";
+import aql_level from "../constants/aqllevel";
 
 function IndexWithColor() {
   return (

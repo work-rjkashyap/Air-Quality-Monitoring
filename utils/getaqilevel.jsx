@@ -1,6 +1,6 @@
 
-import aql_level from '../constants/Constants'
-
+import aql_level
+ from "../constants/aqllevel";
 const getLevelAqI = (AQI) => {
   let result = null;
   aql_level.some((val) => {
