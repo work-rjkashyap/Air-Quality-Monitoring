@@ -5,7 +5,7 @@ function IndexWithColor() {
   return (
     <>
       {aql_level.map((data, key) => (
-        <div className="m-5 ">
+        <div className="m-5 " key={key} >
           <button
             className={`${data.className} w-[106px] p-2 text-black font-bold rounded-sm`}
           >
