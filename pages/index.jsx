@@ -113,6 +113,9 @@ export default function Home() {
       <div className="flex flex-col md:flex-row flex-wrap gap-1 mt-5 justify-center">
         {ShowCityList(ListOfCity.current)}
       </div>
+      <footer className="h-[50px] text-white text-center mt-3 font-bold">
+        Made by Rajeshwar Kashyap
+      </footer>
     </div>
   );
 }
