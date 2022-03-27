@@ -2,6 +2,8 @@
 
 This project will help users to display live air quality monitoring data.
 
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -24,6 +26,8 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 ` "react-use-websocket": "^3.0.0"`
 
 ` "tailwindcss": "^3.0.23"`
+
+
    
 
 ## Requirements
@@ -50,6 +54,8 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 
 ## Deploy on Vercel
+
+It took 15 seconds to deploy it in Vercel.
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
