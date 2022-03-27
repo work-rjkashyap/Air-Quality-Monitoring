@@ -6,29 +6,29 @@
 
 .level-good
 {
-background-color: #00E400;
+background-color: #55a84f;
 }
 
 .level-satisfactory
 {
-background-color: #ffff00;
+background-color: #a3c853;
 }
 
 .level-moderate
 {
-background-color: #ff7e00;
+background-color: #fff851;
 }
 
 .level-Poor
 {
-background-color: #ff0000;
+background-color: #f29c3e;
 }
 
 .level-very-poor
 {
-background-color: #8f3f97;
+background-color: #e93f33;
 }
 .level-severe
 {
-background-color: #7e0023;
+background-color: #af2d24;
 }
