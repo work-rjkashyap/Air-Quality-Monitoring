@@ -1,19 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+
+
+.badge-good
+{
+background-color: #00E400;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.badge-satisfactory
+{
+background-color: #ffff00;
 }
 
-* {
-  box-sizing: border-box;
+.badge-moderate
+{
+background-color: #ff7e00;
+}
+
+.badge-Poor
+{
+background-color: #ff0000;
+}
+
+.badge-very-poor
+{
+background-color: #8f3f97;
+}
+.badge-severe
+{
+background-color: #7e0023;
 }
