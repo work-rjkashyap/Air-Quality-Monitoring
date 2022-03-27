@@ -1,3 +1,6 @@
+# Air Quality Monitoring
+
+This project will help users to display live air quality monitoring data.
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -14,18 +17,35 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Used NPM Packages
+```
+    "react-sparklines": "^1.7.0",
+    "react-use-websocket": "^3.0.0"
+    "tailwindcss": "^3.0.23"
+    ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Requirements
+- Live City wise AQI Chart (Air Quality Index)
+- AQI highlighted by different colors based on level
+- AQI upto 2 decimal places
+- Comparison of AQI of different cities.
+- Magnified Chart of Live AQI of only one city
 
-## Learn More
+### Air Quality Index
 
-To learn more about Next.js, take a look at the following resources:
+| Air Quality Index (AQI) |   Category   |  Color  |
+| ----------------------- | ------------ | ------- |
+|          0-50           | Good         | #55a84f |
+|         51-100          | Satisfactory | #a3c853 |
+|        101-200          | Moderate     | #fff851 |
+|        201-300          | Poor         | #f29c3e |
+|        301-400          | Very Poor    | #e93f33 |
+|        401-500          | Severe       | #af2d24 |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## URL for hosted project
+[***Click here to view the project***](https://air-quality-monitoring-sigma.vercel.app/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
 
 ## Deploy on Vercel
 
